@@ -1,6 +1,22 @@
 <html lang="en">
 <head>
 
+     <script>
+function loadAnalytics() {
+    var gtaScript= document.createElement("scripts")
+  gtaScript.src="https://www.googletagmanager.com/gtag/js?id=G-LN27BBSWPP"
+  gtaScript.async-true;
+  document.head.appendChild(gtaScript);
+
+  gtaScript.onload = function() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LN27BBSWPP');
+  }
+}
+</script>
+
 
     <meta name="google-site-verification" content="i1Hlrv1agqupQp_gpIMOduGlJJdMYWlESn29d_M8QAY" />
 
@@ -113,3 +129,4 @@
 </body>
 
 </html>
+
